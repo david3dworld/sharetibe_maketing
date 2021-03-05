@@ -1,0 +1,19 @@
+{
+  "name": "tm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axois": "0.0.1-security",
+    "form-data": "^3.0.0",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.9.7",
+    "sharetribe-flex-sdk": "^1.10.0",
+    "transit-js": "^0.8.861"
+  }
+}

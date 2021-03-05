@@ -1,0 +1,48 @@
+{
+  "name": "flexapi",
+  "version": "1.2.0",
+  "type": "module",
+  "description": "A free Sharetribe backend flex-api",
+  "engines": {
+    "node": "13.12"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "debug": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "flex-api"
+  },
+  "keywords": [
+    "flex",
+    "api"
+  ],
+  "author": "Allister Mannion",
+  "license": "MIT",
+  "dependencies": {
+    "@sendgrid/mail": "^7.2.0",
+    "axios": "^0.19.2",
+    "cors": "^2.8.5",
+    "decimal.js": "^10.2.0",
+    "dotenv": "^8.2.0",
+    "dotenv-expand": "^5.1.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.7-alpha.3",
+    "express-winston": "^4.0.3",
+    "form-data": "^3.0.0",
+    "lodash": "^4.17.15",
+    "lodash.template": "^4.5.0",
+    "mongoose": "^5.9.19",
+    "oauth2orize": "^1.11.0",
+    "passport": "^0.4.1",
+    "passport-http-bearer": "^1.0.1",
+    "raw-body": "^2.4.1",
+    "sharp": "^0.25.4",
+    "stripe": "^8.63.0",
+    "transit-js": "^0.8.861",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {}
+}

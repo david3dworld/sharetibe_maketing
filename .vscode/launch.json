@@ -1,0 +1,63 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program via npm",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/src/index.js",
+            "cwd": "${workspaceFolder}/src",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": ["run-script", "debug"],
+            "port": 7777,
+            "env": { 
+                "DEBUG": "*", 
+            },
+            "restart": true,
+            "console": "integratedTerminal",
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch import",
+            "program": "${workspaceFolder}/import/import.js",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch stripe-import",
+            "program": "${workspaceFolder}/import/stripe-import.js",
+            "args": [ "acct_1FfCtiDim24KP95T" ],
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch imageconv",
+            "program": "${workspaceFolder}/import/imageconv.js",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch imagerelocate",
+            "program": "${workspaceFolder}/import/imagerelocate.js",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        }, 
+    ]
+}
